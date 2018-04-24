@@ -1,11 +1,17 @@
 'use strict';
 
-var srv = require('http').Server();
+const html = require('fs').readFileSync('multi.html', 'utf-8');
+const port = 3000;
+const srv = require('http').createServer((req, res) => {
+    res.writeHead(200, {
+        'Content-Type': 'text/html',
+        'charset': 'utf-8'
+    });
+    res.end(html);
+});
 var io = require('socket.io')(srv);
-var port = 3000;
 srv.listen(port);
 console.log('signaling server started on port:' + port);
-
 
 // This callback function is called every time a socket
 // tries to connect to the server
