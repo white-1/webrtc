@@ -1,11 +1,11 @@
 {
   "name": "webrtc",
   "version": "1.0.0",
-  "description": "",
+  "description": "signaling server",
   "main": "signaling_room.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node signaling_room"
+    "start": "node signaling_room.js"
   },
   "repository": {
     "type": "git",
