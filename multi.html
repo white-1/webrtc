@@ -107,7 +107,7 @@
 
   // ----- use socket.io ---
   let port = 3002;
-  let socket = io.connect('https://white-1.github.io/webrtc:' + port + '/');
+  let socket = io.connect('https://ken-webrtc.glitch.me/:' + port + '/');
   let room = getRoomName();
   socket.on('connect', function(evt) {
     console.log('socket.io connected. enter room=' + room );
