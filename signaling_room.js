@@ -34,7 +34,7 @@ wsServer.on('connection', function(ws) {
 
 function isSame(ws1, ws2) {
   // -- compare object --
-  return (ws1 === ws2);     
+  return (ws1 === ws2);
 
   // -- compare undocumented id --
   //return (ws1._ultron.id === ws2._ultron.id);
@@ -44,7 +44,7 @@ function isSame(ws1, ws2) {
 
 var srv = require('http').Server();
 var io = require('socket.io')(srv);
-var port = 3002;
+var port = 3000;
 srv.listen(port);
 console.log('signaling server started on port:' + port);
 
