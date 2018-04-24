@@ -3,7 +3,7 @@
 <head>
  <meta charset="utf-8">
  <title>multi party</title>
- <script src="/socket.io/socket.io.js"></script>
+ <script src="http://localhost:3000/socket.io/socket.io.js"></script>
  <script>
    function _assert(desc, v) {
      if (v) {
@@ -107,8 +107,7 @@
 
   // ----- use socket.io ---
   let port = 3000;
-  // let socket = io.connect('https://ken-webrtc.glitch.me:' + port + '/');
-  let socket = io.connect();
+  let socket = io.connect('http://localhost:' + port + '/');
   let room = getRoomName();
   socket.on('connect', function(evt) {
     console.log('socket.io connected. enter room=' + room );

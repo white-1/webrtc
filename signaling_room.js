@@ -1,3 +1,5 @@
+'use strict';
+
 const html = require('fs').readFileSync('multi.html', 'utf-8');
 const port = 3000;
 const srv = require('http').createServer((req, res) => {
