@@ -1,0 +1,24 @@
+{
+  "name": "webrtc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "signaling_room.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node hello.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/white-1/webrtc.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/white-1/webrtc/issues"
+  },
+  "homepage": "https://github.com/white-1/webrtc#readme",
+  "dependencies": {
+    "websocket.io": "^0.2.1",
+    "ws": "^5.1.1"
+  }
+}
